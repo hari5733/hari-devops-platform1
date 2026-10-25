@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari DevOps Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .card {
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            background: #1e293b;
+            border-radius: 16px;
+        }
+        h1 { color: #38bdf8; }
+        button {
+            padding: 12px 22px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Hari DevOps Platform</h1>
+        <p>My First Custom DevOps Application</p>
+        <p>Learning AWS, Docker, Jenkins and Kubernetes.</p>
+        <button onclick="showMessage()">Check Application</button>
+        <p id="status"></p>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById("status").textContent =
+                "Application is running successfully!";
+        }
+    </script>
+</body>
+</html>
